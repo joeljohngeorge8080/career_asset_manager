@@ -1,0 +1,802 @@
+# Career Asset Manager (CAM)
+
+You are a senior software architect, backend engineer, DevOps engineer, and UI/UX designer.
+
+Your task is to build a **production-quality web application**, not a student CRUD project.
+
+The project should follow clean architecture, scalable design, proper coding standards, and be modular.
+
+---
+
+# Project Name
+
+Career Asset Manager (CAM)
+
+---
+
+# Project Vision
+
+Career Asset Manager is a personal career management platform that helps software engineers organize, optimize, and manage every asset related to their professional career.
+
+Instead of storing resumes in random folders, the platform becomes the single source of truth for:
+
+* Resume versions
+* Cover letters
+* Company profiles
+* Job descriptions
+* Skill gap analysis
+* ATS optimization
+* Career documents
+* Application tracking
+
+The system should feel like a professional SaaS product.
+
+---
+
+# Primary Goal
+
+Help users quickly prepare the best application for any company by intelligently managing resumes and comparing them against company requirements.
+
+---
+
+# Core Modules
+
+---
+
+## 1. Resume Version Management
+
+Users can:
+
+* Upload unlimited resumes
+* Upload PDF or DOCX
+* Preview resume inside browser
+* Download resume
+* Duplicate existing resume
+* Archive old resumes
+* Delete resumes
+* Restore archived resumes
+
+Each resume should contain:
+
+* Name
+* Version
+* Description
+* Creation date
+* Last modified
+* Status
+
+  * Draft
+  * Active
+  * Archived
+* Notes
+
+---
+
+## 2. Resume Version Control
+
+Every modification creates a new version.
+
+Features:
+
+* Version history
+* Compare two versions
+* Rollback
+* Timeline of changes
+* Who changed it (future multi-user support)
+
+Git-style comparison:
+
+Added
+
+Removed
+
+Modified sections
+
+---
+
+## 3. Smart Tagging System
+
+Each resume can have multiple tags.
+
+Examples:
+
+Python
+
+FastAPI
+
+Backend
+
+Frontend
+
+Docker
+
+AWS
+
+Terraform
+
+Linux
+
+Kubernetes
+
+DevOps
+
+Cybersecurity
+
+Machine Learning
+
+Fresher
+
+Internship
+
+SDE
+
+Cloud
+
+Database
+
+Networking
+
+The user can create custom tags.
+
+Support:
+
+* Filter
+* Search
+* Sort
+
+---
+
+## 4. Company Database
+
+Users can create companies.
+
+Each company contains:
+
+Company Name
+
+Logo
+
+Industry
+
+Website
+
+Career Page
+
+Recruitment Process
+
+Application Deadline
+
+Location
+
+Role
+
+Salary
+
+Notes
+
+Recruitment Stages
+
+Required Skills
+
+Preferred Skills
+
+Experience Required
+
+Education Requirements
+
+Tech Stack
+
+Important Keywords
+
+Projects They Like
+
+Interview Pattern
+
+Behavioral Expectations
+
+Company Values
+
+Culture Notes
+
+Frequently Asked Questions
+
+Resume Preferences
+
+Portfolio Required
+
+GitHub Required
+
+LinkedIn Required
+
+System Design Required
+
+DSA Required
+
+Projects Expected
+
+Open Source Preferred
+
+Remote/Hybrid/Onsite
+
+Status
+
+Applied
+
+Interview
+
+Rejected
+
+Offer
+
+Wishlist
+
+---
+
+## 5. Job Description Analyzer
+
+Upload:
+
+PDF
+
+Text
+
+DOCX
+
+Extract:
+
+Required Skills
+
+Preferred Skills
+
+Tools
+
+Technologies
+
+Soft Skills
+
+Responsibilities
+
+Qualifications
+
+Years of Experience
+
+Important Keywords
+
+Display extracted data in structured form.
+
+---
+
+## 6. Resume Matching Engine
+
+Select:
+
+Company
+
+Job Description
+
+Resume
+
+Generate:
+
+Skill Match %
+
+Keyword Match %
+
+Missing Skills
+
+Missing Technologies
+
+Weak Sections
+
+Strong Sections
+
+Suggestions
+
+Color Coding:
+
+Green
+
+Yellow
+
+Red
+
+Display:
+
+Overall Compatibility Score
+
+---
+
+## 7. ATS Optimization Module
+
+ATS Checker should analyze:
+
+Resume formatting
+
+Fonts
+
+Tables
+
+Columns
+
+Headers
+
+File size
+
+Section order
+
+Contact information
+
+Email format
+
+Phone format
+
+Skills section
+
+Education section
+
+Experience section
+
+Project section
+
+Keyword density
+
+Keyword coverage
+
+Repeated words
+
+Action verbs
+
+Length
+
+Readability
+
+PDF parsing friendliness
+
+Provide an ATS Score:
+
+0–100
+
+Generate detailed improvement suggestions.
+
+---
+
+## 8. Skill Gap Analysis
+
+Compare:
+
+Resume
+
+vs
+
+Company Requirements
+
+Display:
+
+Skills you have
+
+Skills missing
+
+Skills partially covered
+
+Recommended learning topics
+
+Priority:
+
+High
+
+Medium
+
+Low
+
+---
+
+## 9. Application Tracker
+
+Track:
+
+Company
+
+Role
+
+Resume Used
+
+Cover Letter Used
+
+Application Date
+
+Interview Date
+
+Recruiter
+
+Email
+
+Current Stage
+
+Notes
+
+Outcome
+
+Timeline
+
+Dashboard statistics:
+
+Applications
+
+Interviews
+
+Offers
+
+Rejections
+
+Success rate
+
+---
+
+# Additional Modules
+
+---
+
+## Cover Letter Manager
+
+Version control
+
+Templates
+
+Tags
+
+Company-specific versions
+
+---
+
+## Certificate Repository
+
+Upload certificates
+
+Tags
+
+Issue date
+
+Expiry
+
+Provider
+
+Verification URL
+
+---
+
+## Portfolio Manager
+
+Store:
+
+Portfolio URLs
+
+GitHub
+
+LinkedIn
+
+Blog
+
+Personal Website
+
+---
+
+## Document Search
+
+Global search
+
+Filter by:
+
+Tags
+
+Company
+
+Skill
+
+Date
+
+Status
+
+---
+
+# Dashboard
+
+Modern analytics dashboard.
+
+Cards:
+
+Total Resumes
+
+Active Resume
+
+Applications
+
+Companies
+
+Offers
+
+Interviews
+
+Certificates
+
+Recent Activity
+
+Charts:
+
+Application Timeline
+
+Skills Distribution
+
+Tag Usage
+
+Application Success
+
+ATS Scores
+
+---
+
+# Authentication
+
+JWT Authentication
+
+Password hashing
+
+Forgot password
+
+Email verification
+
+Profile management
+
+Future OAuth support
+
+---
+
+# Role Based Access
+
+Current:
+
+Single user
+
+Architecture must support:
+
+Admin
+
+Editor
+
+Viewer
+
+in future.
+
+---
+
+# Backend
+
+FastAPI
+
+SQLAlchemy
+
+Alembic
+
+Pydantic
+
+JWT
+
+Background Tasks
+
+PostgreSQL
+
+Redis (optional)
+
+Celery (future-ready)
+
+---
+
+# Frontend
+
+React
+
+Next.js
+
+TypeScript
+
+Tailwind CSS
+
+Responsive design
+
+Professional dashboard
+
+Dark & Light mode
+
+Modern SaaS styling
+
+---
+
+# UI Design Requirements
+
+Design inspiration:
+
+Linear
+
+Notion
+
+Vercel
+
+GitHub
+
+Stripe Dashboard
+
+Requirements:
+
+Minimal
+
+Premium
+
+Large whitespace
+
+Rounded cards
+
+Professional typography
+
+Consistent spacing
+
+Animated but subtle
+
+No glassmorphism overload
+
+No flashy gradients
+
+Use charts where appropriate.
+
+---
+
+# DevOps
+
+Docker
+
+Docker Compose
+
+GitHub Actions
+
+Environment variables
+
+Logging
+
+Health checks
+
+Deployment documentation
+
+Nginx reverse proxy
+
+---
+
+# Security
+
+Input validation
+
+Rate limiting
+
+JWT
+
+Secure password storage
+
+Secure file upload
+
+SQL Injection prevention
+
+XSS protection
+
+CSRF protection (where applicable)
+
+Audit logs
+
+---
+
+# Folder Structure
+
+Follow clean architecture.
+
+Separate:
+
+API
+
+Business Logic
+
+Services
+
+Repositories
+
+Models
+
+Schemas
+
+Utils
+
+Configuration
+
+Tests
+
+Static Assets
+
+---
+
+# Documentation
+
+Generate:
+
+README
+
+Architecture Diagram
+
+Database ER Diagram
+
+API Documentation
+
+Deployment Guide
+
+Developer Guide
+
+Future Roadmap
+
+---
+
+# Coding Rules
+
+* Production-quality code only.
+* Modular architecture.
+* Strong typing.
+* Proper error handling.
+* Unit-test friendly.
+* Clean naming conventions.
+* No duplicated code.
+* No unnecessary abstractions.
+* Follow SOLID principles where appropriate.
+
+---
+
+# Implementation Strategy
+
+Build incrementally.
+
+Phase 1
+
+* Authentication
+* Resume Manager
+* Version Control
+* Tags
+
+Phase 2
+
+* Company Database
+* Job Description Analyzer
+* Resume Matching
+
+Phase 3
+
+* ATS Checker
+* Skill Gap Analysis
+* Application Tracker
+
+Phase 4
+
+* Dashboard
+* Analytics
+* Search
+
+Phase 5
+
+* Docker
+* CI/CD
+* Logging
+* Deployment
+* Performance Optimization
+
+Before writing code, produce:
+
+1. Complete system architecture
+2. Folder structure
+3. Database schema
+4. API design
+5. Component hierarchy
+6. Implementation roadmap
+
+Only then begin implementation module by module.
+
